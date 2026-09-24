@@ -1,0 +1,14 @@
+{
+  "name": "api-mascotas",
+  "version": "1.0.0",
+  "description": "API REST CRUD de mascotas para clinica veterinaria",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.10.0"
+  }
+}
