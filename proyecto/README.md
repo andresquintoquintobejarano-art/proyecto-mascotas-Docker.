@@ -123,3 +123,35 @@ La API toma la configuración de conexión a MySQL desde variables de entorno
   contenedor de MySQL porque se monta en `/docker-entrypoint-initdb.d/`.
 - La API reintenta la conexión a MySQL varias veces al iniciar, para tolerar que
   el contenedor de base de datos tarde unos segundos en estar listo.
+
+## Evidencias
+
+### Los tres contenedores en ejecución
+![docker compose ps](evidencias/Cap%201%20Docker%20compose%20.png)
+
+### Levantar los contenedores
+![docker compose up](evidencias/Cap%202%20Levantar%20los%20contenedores%20.png)
+
+### Logs de la API confirmando conexión a MySQL
+![docker compose logs](evidencias/Cap%203%20Docker%20Logs.png)
+
+### GET /mascotas - listar todas
+![GET lista](evidencias/Get%20Listar%20mascotas.png)
+
+### GET /mascotas/:id - obtener una
+![GET por id](evidencias/Obtener%20mascotas%20por%20id.png)
+
+### POST /mascotas - registrar
+![POST](evidencias/Post%20Crear%20nueva%20mascota.png)
+
+### PUT /mascotas/:id - actualizar
+![PUT](evidencias/Put%20Actulizar%20Mascota.png)
+
+### DELETE /mascotas/:id - eliminar
+![DELETE](evidencias/Delete%20Eliminar%20mascota.png)
+
+### Evidencia de que la mascota ya no aparece tras eliminarla
+![Evidencia eliminación](evidencias/NOMBRE_COMPLETO_AQUI.png)
+
+### Persistencia de datos tras docker compose down / up
+![Persistencia](evidencias/Cap7%20Persistencia.png)
